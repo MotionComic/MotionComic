@@ -34,18 +34,26 @@ VITE_BASE=/ npm run build
 
 ## 部署到 GitHub Pages
 
-1. 将本仓库推送到 GitHub（仓库名建议 `MotionComicStudioHome`）
-2. 仓库 **Settings → Pages → Source** 选择 **GitHub Actions**
-3. 推送到 `main` / `master` 后，workflow `Deploy GitHub Pages` 会自动构建并发布
+站点必须发布 **Vite 构建产物**（`dist/`），不能直接托管仓库源码，否则会请求 `/src/main.ts` 导致页面空白。
 
-站点地址一般为：
+1. 仓库 **Settings → Pages**
+2. **Build and deployment → Source** 选 **Deploy from a branch**
+3. Branch 选 **`gh-pages`** / **`/`（root）** → Save
+4. 推送到 `main` 后，workflow 会自动 `npm run build` 并更新 `gh-pages`
 
-`https://<username>.github.io/MotionComicStudioHome/`
+本地手动发布：
 
-若仓库名不同，请同步修改：
+```bash
+npm run build
+touch dist/.nojekyll
+# 将 dist 内容推到 gh-pages 分支（见 CI workflow）
+```
 
-- `vite.config.ts` 中的默认 `base`
-- `.github/workflows/deploy.yml` 中的 `VITE_BASE`
+站点地址：
+
+`https://motioncomic.github.io/MotionComic/`
+
+若仓库名不同，请同步修改 `vite.config.ts` 与 workflow 中的 `VITE_BASE`。
 
 ## 素材
 
