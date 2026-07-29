@@ -32,6 +32,8 @@ export type Dictionary = {
   'download.source': string;
   'download.note': string;
   'footer.copy': string;
+  'footer.support': string;
+  'footer.privacy': string;
   features: Feature[];
   formats: Format[];
   shots: Shot[];
@@ -69,6 +71,8 @@ export const messages: Record<Locale, Dictionary> = {
     'download.source': '查看源码',
     'download.note': '当前为占位链接，请在 src/config.ts 中配置真实地址。',
     'footer.copy': '© Motion Comic Studio Writer',
+    'footer.support': '支持与联系',
+    'footer.privacy': '隐私政策',
     features: [
       {
         title: '本地 Markdown，不锁文稿',
@@ -155,6 +159,8 @@ export const messages: Record<Locale, Dictionary> = {
     'download.source': 'View source',
     'download.note': 'Placeholder links—set real URLs in src/config.ts.',
     'footer.copy': '© Motion Comic Studio Writer',
+    'footer.support': 'Support',
+    'footer.privacy': 'Privacy Policy',
     features: [
       {
         title: 'Local Markdown, no lock-in',

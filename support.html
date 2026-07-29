@@ -5,16 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Privacy Policy for Motion Comic Studio Writer — a local Markdown writing application for Mac."
+      content="Support for Motion Comic Studio Writer — contact us with questions, feedback, or technical help."
     />
     <link rel="icon" type="image/png" href="/brand/logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Noto+Sans+SC:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Privacy Policy — Motion Comic Studio Writer</title>
+    <title>Support — Motion Comic Studio Writer</title>
     <style>
       :root {
         --bg: #070a12;
@@ -22,8 +16,10 @@
         --muted: #a8b0c2;
         --line: rgba(244, 241, 234, 0.12);
         --cyan: #3de7ff;
-        --font-display: 'Bricolage Grotesque', 'Noto Sans SC', sans-serif;
-        --font-body: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+        --font-display: 'Avenir Next', 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC',
+          'Microsoft YaHei', sans-serif;
+        --font-body: 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei',
+          sans-serif;
       }
       * {
         box-sizing: border-box;
@@ -87,13 +83,8 @@
         letter-spacing: -0.03em;
         line-height: 1.2;
       }
-      .updated {
+      .lead {
         margin: 0 0 2rem;
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-      .lead p {
-        margin: 0 0 0.85rem;
         color: var(--muted);
       }
       section {
@@ -107,13 +98,44 @@
         font-size: 1.15rem;
         letter-spacing: -0.02em;
       }
-      section p {
+      section p,
+      section ul {
         margin: 0;
         color: var(--muted);
       }
-      .contact {
-        margin-top: 2rem;
+      section ul {
+        padding-left: 1.2rem;
+      }
+      section li + li {
+        margin-top: 0.4rem;
+      }
+      .email-box {
+        margin-top: 1rem;
+        padding: 1.1rem 1.25rem;
+        border: 1px solid rgba(61, 231, 255, 0.35);
+        border-radius: 14px;
+        background: rgba(61, 231, 255, 0.06);
+      }
+      .email-box .label {
+        display: block;
+        margin-bottom: 0.35rem;
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
         color: var(--muted);
+      }
+      .email-box a {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        word-break: break-all;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+        margin-top: 0.75rem;
       }
       footer {
         padding: 1.5rem clamp(1.25rem, 4vw, 3rem) 2rem;
@@ -130,57 +152,52 @@
         <img src="/brand/logo.png" alt="" width="36" height="36" />
         <strong>Motion Comic Studio Writer</strong>
       </a>
-      <a class="lang-link" href="./privacy-policy-zh.html">中文</a>
+      <a class="lang-link" href="./support-zh.html">中文</a>
     </div>
     <main>
-      <h1>Privacy Policy for Motion Comic Studio Writer</h1>
-      <p class="updated">Last updated: 2026</p>
-
-      <div class="lead">
-        <p>
-          Motion Comic Studio Writer is a local Markdown writing application. All your manuscript
-          files are stored locally on your Mac device. This application DOES NOT automatically
-          collect, upload or transmit your written content, personal manuscripts, text data to any
-          remote server.
-        </p>
-      </div>
-
-      <section>
-        <h2>1. Data Storage</h2>
-        <p>
-          All documents you create and edit are saved locally on your computer. No content will be
-          sent to external servers without your explicit manual operation.
-        </p>
-      </section>
-
-      <section>
-        <h2>2. Data We Collect</h2>
-        <p>
-          This app does not actively gather your personal information. If you choose to contact
-          support voluntarily, any information you send will only be used to reply to your request.
-        </p>
-      </section>
-
-      <section>
-        <h2>3. Third-party Services</h2>
-        <p>
-          This software does not embed third-party analytics, tracking SDKs or advertising modules.
-        </p>
-      </section>
-
-      <section>
-        <h2>4. Your Rights</h2>
-        <p>
-          You fully own all local Markdown files created within this application. You may copy,
-          export or delete your files freely at any time.
-        </p>
-      </section>
-
-      <p class="contact">
-        If you have any questions about this Privacy Policy, please contact us at
-        <a href="mailto:10226093@qq.com">10226093@qq.com</a>
-        or visit our <a href="./support.html">Support</a> page.
+      <h1>Support</h1>
+      <p class="lead">
+        Need help with Motion Comic Studio Writer? We are happy to answer questions, take feedback,
+        and help with technical issues.
       </p>
+
+      <section>
+        <h2>Contact us</h2>
+        <p>
+          Email is the best way to reach support. Please include your macOS version, app version, and
+          a short description of the issue when possible.
+        </p>
+        <div class="email-box">
+          <span class="label">Support email</span>
+          <a href="mailto:10226093@qq.com">10226093@qq.com</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>What we can help with</h2>
+        <ul>
+          <li>Installation and launch problems on macOS</li>
+          <li>Opening or saving local Markdown projects</li>
+          <li>Questions about Story Tree, Storyline, and writing formats</li>
+          <li>Feedback and feature requests</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Response time</h2>
+        <p>
+          We aim to reply within a few business days. Thank you for your patience while we look into
+          your request.
+        </p>
+      </section>
+
+      <section>
+        <h2>More information</h2>
+        <div class="links">
+          <a href="./">Product homepage</a>
+          <a href="./privacy-policy-en.html">Privacy Policy</a>
+        </div>
+      </section>
     </main>
     <footer>© Motion Comic Studio Writer</footer>
   </body>

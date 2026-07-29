@@ -1,20 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Privacy Policy for Motion Comic Studio Writer — a local Markdown writing application for Mac."
+      content="Motion Comic Studio Writer 支持与联系 — 通过邮件获取帮助、反馈问题。"
     />
     <link rel="icon" type="image/png" href="/brand/logo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Noto+Sans+SC:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Privacy Policy — Motion Comic Studio Writer</title>
+    <title>支持与联系 — Motion Comic Studio Writer</title>
     <style>
       :root {
         --bg: #070a12;
@@ -22,8 +16,10 @@
         --muted: #a8b0c2;
         --line: rgba(244, 241, 234, 0.12);
         --cyan: #3de7ff;
-        --font-display: 'Bricolage Grotesque', 'Noto Sans SC', sans-serif;
-        --font-body: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+        --font-display: 'Avenir Next', 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC',
+          'Microsoft YaHei', sans-serif;
+        --font-body: 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Noto Sans SC', 'Microsoft YaHei',
+          sans-serif;
       }
       * {
         box-sizing: border-box;
@@ -87,13 +83,8 @@
         letter-spacing: -0.03em;
         line-height: 1.2;
       }
-      .updated {
+      .lead {
         margin: 0 0 2rem;
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-      .lead p {
-        margin: 0 0 0.85rem;
         color: var(--muted);
       }
       section {
@@ -107,13 +98,44 @@
         font-size: 1.15rem;
         letter-spacing: -0.02em;
       }
-      section p {
+      section p,
+      section ul {
         margin: 0;
         color: var(--muted);
       }
-      .contact {
-        margin-top: 2rem;
+      section ul {
+        padding-left: 1.2rem;
+      }
+      section li + li {
+        margin-top: 0.4rem;
+      }
+      .email-box {
+        margin-top: 1rem;
+        padding: 1.1rem 1.25rem;
+        border: 1px solid rgba(61, 231, 255, 0.35);
+        border-radius: 14px;
+        background: rgba(61, 231, 255, 0.06);
+      }
+      .email-box .label {
+        display: block;
+        margin-bottom: 0.35rem;
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
         color: var(--muted);
+      }
+      .email-box a {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        word-break: break-all;
+      }
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+        margin-top: 0.75rem;
       }
       footer {
         padding: 1.5rem clamp(1.25rem, 4vw, 3rem) 2rem;
@@ -130,57 +152,47 @@
         <img src="/brand/logo.png" alt="" width="36" height="36" />
         <strong>Motion Comic Studio Writer</strong>
       </a>
-      <a class="lang-link" href="./privacy-policy-zh.html">中文</a>
+      <a class="lang-link" href="./support.html">English</a>
     </div>
     <main>
-      <h1>Privacy Policy for Motion Comic Studio Writer</h1>
-      <p class="updated">Last updated: 2026</p>
-
-      <div class="lead">
-        <p>
-          Motion Comic Studio Writer is a local Markdown writing application. All your manuscript
-          files are stored locally on your Mac device. This application DOES NOT automatically
-          collect, upload or transmit your written content, personal manuscripts, text data to any
-          remote server.
-        </p>
-      </div>
-
-      <section>
-        <h2>1. Data Storage</h2>
-        <p>
-          All documents you create and edit are saved locally on your computer. No content will be
-          sent to external servers without your explicit manual operation.
-        </p>
-      </section>
-
-      <section>
-        <h2>2. Data We Collect</h2>
-        <p>
-          This app does not actively gather your personal information. If you choose to contact
-          support voluntarily, any information you send will only be used to reply to your request.
-        </p>
-      </section>
-
-      <section>
-        <h2>3. Third-party Services</h2>
-        <p>
-          This software does not embed third-party analytics, tracking SDKs or advertising modules.
-        </p>
-      </section>
-
-      <section>
-        <h2>4. Your Rights</h2>
-        <p>
-          You fully own all local Markdown files created within this application. You may copy,
-          export or delete your files freely at any time.
-        </p>
-      </section>
-
-      <p class="contact">
-        If you have any questions about this Privacy Policy, please contact us at
-        <a href="mailto:10226093@qq.com">10226093@qq.com</a>
-        or visit our <a href="./support.html">Support</a> page.
+      <h1>支持与联系</h1>
+      <p class="lead">
+        使用 Motion Comic Studio Writer 时如有疑问、反馈或需要技术帮助，欢迎通过邮件联系我们。
       </p>
+
+      <section>
+        <h2>联系方式</h2>
+        <p>
+          请优先使用邮件联系支持。如方便，请注明 macOS 版本、应用版本以及问题简要描述，便于我们更快定位。
+        </p>
+        <div class="email-box">
+          <span class="label">支持邮箱</span>
+          <a href="mailto:10226093@qq.com">10226093@qq.com</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>我们可以协助</h2>
+        <ul>
+          <li>macOS 安装与启动问题</li>
+          <li>打开或保存本地 Markdown 项目</li>
+          <li>故事树、故事线与写作体裁相关问题</li>
+          <li>产品反馈与功能建议</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>回复时间</h2>
+        <p>我们会尽量在数个工作日内回复，感谢你的耐心等待。</p>
+      </section>
+
+      <section>
+        <h2>更多信息</h2>
+        <div class="links">
+          <a href="./">产品首页</a>
+          <a href="./privacy-policy-zh.html">隐私政策</a>
+        </div>
+      </section>
     </main>
     <footer>© Motion Comic Studio Writer</footer>
   </body>

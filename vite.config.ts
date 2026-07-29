@@ -15,6 +15,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         'privacy-policy-en': resolve(__dirname, 'privacy-policy-en.html'),
         'privacy-policy-zh': resolve(__dirname, 'privacy-policy-zh.html'),
+        support: resolve(__dirname, 'support.html'),
+        'support-zh': resolve(__dirname, 'support-zh.html'),
       },
     },
   },

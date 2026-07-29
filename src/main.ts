@@ -67,6 +67,15 @@ function setLocale(next: Locale): void {
   if (mac) mac.href = siteConfig.downloadMacUrl;
   if (source) source.href = siteConfig.sourceUrl;
 
+  const support = document.querySelector<HTMLAnchorElement>('#footer-support');
+  const privacy = document.querySelector<HTMLAnchorElement>('#footer-privacy');
+  if (support) {
+    support.href = next === 'zh' ? './support-zh.html' : './support.html';
+  }
+  if (privacy) {
+    privacy.href = next === 'zh' ? './privacy-policy-zh.html' : './privacy-policy-en.html';
+  }
+
   renderFeatures();
   renderFormats();
   renderGallery();
